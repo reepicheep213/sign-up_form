@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40vw;
+  height: 100vh;
+
+  background-image: url("shifaaz-shamoon-sLAk1guBG90-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form {
+  position: relative;
+  margin-left: 40vw;
+  padding: 30px;
+}
+
+.form-copy {
+  font-family: Helvetica, sans-serif;
+}
+
+.logo-div {
+  position: relative;
+  top: 20%;
+  background-color: black;
+  opacity: 50%;
+
+  font-family: "Helvetica";
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
