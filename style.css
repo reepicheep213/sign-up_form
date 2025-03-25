@@ -16,6 +16,7 @@ body {
   left: 0;
   width: 40vw;
   height: 100vh;
+  z-index: 3;
 
   background-image: url("shifaaz-shamoon-sLAk1guBG90-unsplash.jpg");
   background-size: cover;
@@ -36,28 +37,78 @@ body {
 }
 
 form {
-  position: relative;
+  /* position: fixed; */
   margin-top: 15vh;
   margin-left: 40vw;
+  width: 600px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 p {
   font-size: 22px;
   font-weight: bold;
-  padding-bottom: 20px; 
+  padding: 20px 0;
+  z-index: 2;
 }
 
 .form-copy,
-.submit-button,
-.login-link {
+.form-field,
+.form-actions {
   margin-left: 40px;
+  width: 40vw;
 }
 
 .form-field {
   margin-top: 30px;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
+  display: flex;
+  flex-direction: column;
+
+  position: relative; 
+}
+
+.field-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100vw;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  height: 300px;
+  /* padding: 0 40px; */
+}
+
+.form-control {
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: bold;
+  color: #272e2f;
+
+  width: 800px;
+  /* max-width: 800px; */
+}
+
+.form-control div {
+  margin-right: 60px;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+
+.form-control input {
+  display: block;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 250px;
+  padding: 7px;
+}
+
+.form-actions {
+  position: relative;
+  /* margin-top: 275px; */
 }
 
 button {
@@ -88,4 +139,13 @@ button:active {
 .login-link a {
   font-weight: bold;
   text-decoration: none;
+  color: #1290a9;
+}
+
+.login-link a:visited {
+  color: #036469;
+}
+
+.login-link a:hover {
+  color: #00a3b1;
 }
