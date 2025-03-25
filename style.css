@@ -27,8 +27,8 @@ body {
 .logo-div {
   position: relative;
   top: 25%;
-  background-color: black;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
 
   font-size: 4rem;
   font-weight: 400;
@@ -36,8 +36,23 @@ body {
   text-align: center;
 }
 
+span {
+  color: white;
+  position: absolute;
+  bottom: 1%;
+  text-align: center;
+  z-index: 4;
+  left: 0;
+  right: 0;
+}
+
+span a,
+span a:active,
+span a:visited {
+  color: white;
+}
+
 form {
-  /* position: fixed; */
   margin-top: 15vh;
   margin-left: 40vw;
   width: 600px;
@@ -62,7 +77,6 @@ p {
 
 .form-field {
   margin-top: 30px;
-  /* padding: 20px 40px; */
   display: flex;
   flex-direction: column;
 
@@ -77,11 +91,9 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 0;
   height: 300px;
-  /* padding: 0 40px; */
 }
 
 .form-control {
-  /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   font-size: 12px;
@@ -89,7 +101,6 @@ p {
   color: #272e2f;
 
   width: 800px;
-  /* max-width: 800px; */
 }
 
 .form-control div {
@@ -119,7 +130,6 @@ input:focus {
 
 .form-actions {
   position: relative;
-  /* margin-top: 275px; */
 }
 
 button {
